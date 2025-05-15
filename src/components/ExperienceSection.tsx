@@ -33,7 +33,7 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = ({ workExperience, e
           </p>
           <div className="mt-8">
             <a
-              href="/resume.pdf"
+              href="https://emerald-urban-meadowlark-587.mypinata.cloud/ipfs/bafkreibmfqjm7mjyk7oavcleoxulwhzwzywnnzz2fdnbaiwyxjvo2tbrq4"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 transition-colors duration-300"
