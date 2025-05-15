@@ -53,7 +53,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ name, title, photoUrl }) => {
               <img 
                 src={photoUrl} 
                 alt={name} 
-                className="w-[calc(100%+10px)] h-[calc(100%+10px)] object-cover"
+                className="absolute -top-[3px] -left-[5px] w-[calc(100%+10px)] h-[calc(100%+8px)] object-cover"
               />
             </div>
           </div>

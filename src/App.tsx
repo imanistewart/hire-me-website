@@ -117,7 +117,7 @@ const yourEducation = [
     degree: "Bachelor of Arts",
     institution: "Brown University",
     period: "2021 - 2024",
-    description: "2024 Midyear Completion Orator; 2023-24 Stone Inequality Initiative Fellow; Senior capstone project on 20th Century Black Female Entrepreneurs of Rhode Island.",
+    description: "2024 Midyear Completion Orator; 2023-24 Stone Inequality Initiative Fellow; Senior GNSS capstone project on 20th Century Black Female Entrepreneurs of Rhode Island.",
   },
   {
     degree: "Associate of Arts",
