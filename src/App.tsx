@@ -1,4 +1,3 @@
-import React from 'react';
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import AboutSection from './components/AboutSection';
@@ -8,89 +7,130 @@ import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 
 // Mock data (replace with your own)
-const yourName = "John Doe";
-const yourTitle = "Full Stack Developer";
-const yourPhotoUrl = "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2";
+const yourName = "Imani Stewart '24.5";
+const yourTitle = "Research & Data Analyst";
+const yourPhotoUrl = "https://emerald-urban-meadowlark-587.mypinata.cloud/ipfs/bafkreihtlfgvbyaba6p2cssw7k6yldjmdb7sdojrdpuir2ru2rjhn2iopq";
 
-const yourBio = "I'm a passionate Full Stack Developer with 5+ years of experience crafting beautiful, functional websites and applications. I specialize in React, Node.js, and modern JavaScript frameworks. I believe in clean code, intuitive user experiences, and solving complex problems with elegant solutions. When I'm not coding, you can find me hiking, reading, or experimenting with new technologies.";
+const yourBio = "I'm a multidisciplinary Research & Data Analyst with a passion for translating complex systems into actionable strategies. I specialize in regulatory insights and turning data into decision-ready insights across healthcare, venture capital, and higher education. I believe in clear communication, thoughtful program design, and building infrastructure that empowers both users and organizations. When I’m not improving the efficacy of workflows or supporting innovative and engaging student activities, you’ll find me crocheting, doing home workouts, or hanging out with my cat, Mama.";
 
-const yourSkills = [
+export type SkillCategory = "technical" | "soft" | "tools";
+export interface Skill {
+  name: string;
+  level: number;
+  category: SkillCategory;
+}
+
+const yourSkills: Skill[] = [
   // Technical skills
-  { name: "React.js", level: 95, category: "technical" },
-  { name: "JavaScript/TypeScript", level: 90, category: "technical" },
-  { name: "Node.js", level: 85, category: "technical" },
-  { name: "HTML/CSS", level: 90, category: "technical" },
-  { name: "SQL & NoSQL", level: 80, category: "technical" },
-  { name: "GraphQL", level: 75, category: "technical" },
+  { name: "Data Analysis", level: 95, category: "technical" },
+  { name: "Mixed-Method Data Collection", level: 95, category: "technical" },
+  { name: "User-Centered Research", level: 95, category: "technical" },
+  { name: "Healthcare Compliance Frameworks", level: 80, category: "technical" },
+  { name: "Financial Modeling", level: 80, category: "technical" },
+  { name: "HTML/CSS/JS", level: 80, category: "technical" },
   // Soft skills
-  { name: "Problem Solving", level: 90, category: "soft" },
-  { name: "Communication", level: 85, category: "soft" },
-  { name: "Teamwork", level: 90, category: "soft" },
-  { name: "Time Management", level: 80, category: "soft" },
-  { name: "Adaptability", level: 85, category: "soft" },
+  { name: "Verbal & Written Communication", level: 100, category: "soft" },
+  { name: "Adaptability & Iterative Mindset", level: 100, category: "soft" },
+  { name: "Critical Thinking & Problem-Solving", level: 100, category: "soft" },
+  { name: "Presentation", level: 95, category: "soft" }, 
+  { name: "Cross-Functional Collaboration", level: 95, category: "soft" }, 
+  { name: "Training & Mentorship", level: 95, category: "soft" }, 
   // Tools
-  { name: "Git/GitHub", level: 90, category: "tools" },
-  { name: "Docker", level: 80, category: "tools" },
-  { name: "AWS", level: 75, category: "tools" },
-  { name: "Figma", level: 85, category: "tools" },
-  { name: "Jest", level: 80, category: "tools" },
+  { name: "Adobe Photoshop", level: 100, category: "tools" }, 
+  { name: "Google Workspace", level: 95, category: "tools" }, 
+  { name: "Microsoft Office Suite", level: 95, category: "tools" }, 
+  { name: "Slack", level: 95, category: "tools" }, 
+  { name: "Python", level: 80, category: "tools" },
+  { name: "Git/GitHub", level: 80, category: "tools" },
 ];
 
 const yourExperience = [
   {
-    title: "Senior Frontend Developer",
-    company: "Tech Innovations Inc.",
-    period: "2021 - Present",
-    description: "Lead developer for enterprise web applications focusing on React and TypeScript.",
+    title: "Community Engagement Specialist",
+    company: "College Year in Athens, Athens, Greece",
+    period: "Jun. 2024 - Apr. 2025",
+    description: "Renowned study-abroad program fostering academic and cultural exchange between North America and Greece.",
     achievements: [
-      "Reduced load times by 40% through code optimization",
-      "Mentored 5 junior developers and implemented code review workflows",
-      "Introduced Storybook, improving component development efficiency by 30%",
+      "Led the development of student programming and misconduct resolution.",
+      "Designed scholarship pipelines, reducing tuition by 40% for underrepresented universities.",
+      "Enhanced institutional conduct policies for student accessibility and procedural transparency.",
     ],
   },
   {
-    title: "Full Stack Developer",
-    company: "Digital Solutions Ltd.",
-    period: "2018 - 2021",
-    description: "Developed full-stack applications using React, Node.js, and MongoDB.",
+    title: "Analyst",
+    company: "Van Wickle Ventures, Providence, RI",
+    period: "Oct. 2022 - Dec. 2023",
+    description: "Student-led venture firm investing in early-stage, Brown community-founded startups across various sectors.",
     achievements: [
-      "Built and launched 3 major client projects ahead of schedule",
-      "Implemented CI/CD pipelines that reduced deployment time by 50%",
-      "Designed and implemented RESTful APIs serving 10K+ daily users",
+      "Sourced, vetted, and presented 4–8 startup founders monthly for VC investment consideration.",
+      "Conducted due diligence of startups and managed founder relationships post-pitch.",
+      "Developed comprehensive financial models to support pitches and demonstrate growth potential for startup investments.",
     ],
   },
   {
-    title: "Web Developer",
-    company: "Creative Agency",
-    period: "2016 - 2018",
-    description: "Created responsive websites for clients across various industries.",
+    title: "Compliance Intern",
+    company: "MediCircle, Providence, RI",
+    period: "Jan. 2022 - May 2022",
+    description: "Early-stage, venture-backed Brown student-founded startup focused on oral chemotherapy redistribution.",
     achievements: [
-      "Developed 20+ client websites with modern, responsive designs",
-      "Increased mobile conversion rates by 25% through UI/UX improvements",
-      "Integrated payment systems and e-commerce functionality",
+      "Assisted in developing regulatory compliance protocols to align with federal healthcare regulations.",
+      "Collaborated with cross-functional teams to identify potential health data risks with web hosting services, proposing actionable solutions.",
+      "Transformed complex health information into easily-consumable onboarding materials for pharmacy customers, utilizing data from 40+ states.",
+    ],
+  },
+  {
+    title: "Laboratory Technician",
+    company: "Steep Hill, Columbia, MD & Harrisburg, PA",
+    period: "Sep. 2018 - May 2019",
+    description: "A pioneering medical cannabis testing laboratory which provides essential analytics and research services to the industry.",
+    achievements: [
+      "Maintained comprehensive records of laboratory activities and results, contributing to data transparency and facilitating audits by external agencies.",
+      "Enhanced laboratory processes by implementing standardized documentation methods to improve traceability and compliance with industry regulations.",
+      "Complied with all safety and quality assurance protocols during laboratory operations to maintain high standards across both facilities.",
+    ],
+  },
+  {
+    title: "Extractions Manager",
+    company: "Temescal Wellness, Baltimore, MD & Manchester, NH",
+    period: "Apr. 2017 - Sep. 2018",
+    description: "Cannabis company providing innovative wellness solutions in compliance with local regulations.",
+    achievements: [
+      "Developed novel standard operating procedure documentation, ensuring regulatory alignment and seamless execution.",
+      "Created structured training modules that enabled skill acquisition for extraction technicians, enhancing overall team productivity.",
+      "Adapted complex operational models to Maryland's state-specific compliance requirements.",
+    ],
+  },
+  {
+    title: "Pharmacy Technician",
+    company: "Johns Hopkins Hospital, Baltimore, MD",
+    period: "Dec. 2015 - Apr. 2017",
+    description: "Leading health care institution recognized for its advanced medical research and high-quality patient care in multiple specialties.",
+    achievements: [
+      "Conducted HIPAA-compliant medication preparation and distribution, ensuring regulatory compliance in an inpatient hospital setting.",
+      "Responsible for the accurate delivery of medication for over 200 pediatric patient rooms, coordinating closely pharmacists and hospital administrators to support continuity of care.",
     ],
   },
 ];
 
 const yourEducation = [
   {
-    degree: "Master of Computer Science",
-    institution: "Tech University",
-    period: "2014 - 2016",
-    description: "Specialized in Software Engineering with a focus on web technologies and distributed systems.",
+    degree: "Bachelor of Arts",
+    institution: "Brown University",
+    period: "2021 - 2024",
+    description: "2024 Midyear Completion Orator; 2023-24 Stone Inequality Initiative Fellow; Senior capstone project on 20th Century Black Female Entrepreneurs of Rhode Island.",
   },
   {
-    degree: "Bachelor of Science in Information Technology",
-    institution: "State College",
-    period: "2010 - 2014",
-    description: "Graduated with honors. Relevant coursework included database design, algorithms, and web development.",
+    degree: "Associate of Arts",
+    institution: "The Community College of Baltimore County",
+    period: "2019 - 2021",
+    description: "Phi Theta Kappa Chapter Treasurer; Graduated summa cum laude, 4.0 GPA.",
   },
 ];
 
 const yourContactInfo = {
-  email: "john.doe@example.com",
-  phone: "+1 (555) 123-4567",
-  location: "San Francisco, CA",
+  email: "imanistewart@gmail.com",
+  phone: "+1 (301) 741-8581",
+  location: "Providence, RI",
 };
 
 function App() {
