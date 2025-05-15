@@ -29,7 +29,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ name, title, photoUrl }) => {
               {title}
             </h2>
             <p className="mt-6 text-lg text-white/80 max-w-lg mx-auto md:mx-0 animate-fade-in-up animation-delay-600">
-              I create exceptional digital experiences with a focus on clean design and efficient, maintainable code.
+              I connect data, compliance, and strategy to create actionable insights that serve people and platforms.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start animate-fade-in-up animation-delay-900">
               <a 
@@ -53,7 +53,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ name, title, photoUrl }) => {
               <img 
                 src={photoUrl} 
                 alt={name} 
-                className="w-full h-full object-cover"
+                className="w-[calc(100%+10px)] h-[calc(100%+10px)] object-cover"
               />
             </div>
           </div>

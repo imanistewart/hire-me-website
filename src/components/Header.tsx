@@ -38,7 +38,7 @@ const Header: React.FC = () => {
                 isScrolled ? 'text-gray-900' : 'text-white'
               }`}
             >
-              John Doe
+              Imani Stewart '24.5
             </a>
           </div>
 

@@ -13,7 +13,7 @@ const Footer: React.FC<FooterProps> = ({ name }) => {
         <div className="text-center">
           <h3 className="text-xl font-bold">{name}</h3>
           <p className="mt-2 text-gray-400">
-            Creating exceptional digital experiences
+            Creating exceptional solutions to analytical problems.
           </p>
         </div>
         
