@@ -20,7 +20,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ name, title, photoUrl }) => {
       </div>
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 z-10">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-12">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-8">
           <div className="w-full md:w-1/2 text-center md:text-left">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight animate-fade-in-up">
               Hi, I'm <span className="text-indigo-300">{name}</span>
