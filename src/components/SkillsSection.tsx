@@ -64,7 +64,7 @@ const SkillsSection: React.FC<SkillsSectionProps> = ({ skills }) => {
                           skill.level >= 70 ? 'bg-violet-50 hover:bg-violet-100' : 
                           'bg-purple-50 hover:bg-purple-100'}`}
                     >
-                      <div className="flex items-center justify-between">
+                      <div className="flex items-center justify-between flex-wrap">
                         <span className="text-gray-800 font-medium">{skill.name}</span>
                         <span className={`text-sm font-medium px-3 py-1 rounded-full
                           ${skill.level >= 90 ? 'bg-indigo-100 text-indigo-700' : 
