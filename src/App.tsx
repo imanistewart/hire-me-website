@@ -77,17 +77,6 @@ const yourExperience = [
     ],
   },
   {
-    title: "theKEEPER UTRA Summer Researcher",
-    company: "Brown University, Providence, RI",
-    period: "Jun. 2023 - Aug. 2023",
-    description: "Research fellowship awarded through Brown's Undergraduate Teaching and Research Awards (UTRA) to support development of a digital archive documenting global contributions of women and girls in Hip Hop culture.",
-    achievements: [
-      "Led data processing efforts using advanced Excel techniques to code, batch-upload, and QA over 190 calendar entries of artist birthdays and historical rap milestones for the archive's backend system.",
-      "Conducted archival sourcing and metadata annotation for over 130 images, ensuring long-term asset retrievability and contextual accuracy.",
-      "Facilitated data validation processes by developing input/output automation protocols, significantly reducing manual entry errors.",
-    ],
-  },
-  {
     title: "Analyst",
     company: "Van Wickle Ventures, Providence, RI",
     period: "Oct. 2022 - Dec. 2023",
@@ -96,6 +85,17 @@ const yourExperience = [
       "Sourced, vetted, and presented 4–8 startup founders monthly for VC investment consideration.",
       "Conducted due diligence of startups and managed founder relationships post-pitch.",
       "Developed comprehensive financial models to support pitches and demonstrate growth potential for startup investments.",
+    ],
+  },
+  {
+    title: "theKEEPER UTRA Summer Researcher",
+    company: "Brown University, Providence, RI",
+    period: "Jun. 2022 - Aug. 2022",
+    description: "Research fellowship awarded through Brown's Undergraduate Teaching and Research Awards (UTRA) to support development of a digital archive documenting global contributions of women and girls in Hip Hop culture.",
+    achievements: [
+      "Led data processing efforts using advanced Excel techniques to code, batch-upload, and QA over 190 calendar entries of artist birthdays and historical rap milestones for the archive's backend system.",
+      "Conducted archival sourcing and metadata annotation for over 130 images, ensuring long-term asset retrievability and contextual accuracy.",
+      "Facilitated data validation processes by developing input/output automation protocols, significantly reducing manual entry errors.",
     ],
   },
   {
