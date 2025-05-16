@@ -44,7 +44,8 @@ const yourSkills: Skill[] = [
   { name: 'Google Workspace', level: 80, category: 'tools' },
   { name: 'Microsoft Office Suite', level: 80, category: 'tools' },
   { name: 'Slack', level: 80, category: 'tools' },
-  { name: 'Python', level: 80, category: 'tools' },
+   { name: 'Notion', level: 80, category: 'tools' },
+  { name: 'Python', level: 70, category: 'tools' },
   { name: 'Git/GitHub', level: 70, category: 'tools' },
 ];
 
