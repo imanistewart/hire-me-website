@@ -1,10 +1,11 @@
 import React from 'react';
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone, MapPin, Linkedin } from 'lucide-react';
 
 interface ContactInfo {
   email: string;
   phone: string;
   location: string;
+  linkedin?: string; // Optional LinkedIn profile URL
 }
 
 interface ContactSectionProps {
@@ -24,7 +25,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({ contactInfo }) => {
         </div>
 
         <div className="max-w-5xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition-shadow duration-300">
               <Mail className="w-10 h-10 mx-auto text-indigo-600 mb-4" />
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Email</h3>
@@ -50,6 +51,21 @@ const ContactSection: React.FC<ContactSectionProps> = ({ contactInfo }) => {
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Location</h3>
               <p className="text-gray-600">{contactInfo.location}</p>
             </div>
+            {contactInfo.linkedin && (
+              <div className="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition-shadow duration-300">
+                <Linkedin className="w-10 h-10 mx-auto text-indigo-600 mb-4" />
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">LinkedIn</h3>
+                <p className="text-gray-600">
+                  <a 
+                    href={contactInfo.linkedin} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="hover:text-indigo-600 transition-colors duration-300">
+                    View Profile
+                  </a>
+                </p>
+              </div>
+            )}
           </div>
         </div>
       </div>

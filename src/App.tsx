@@ -203,6 +203,7 @@ const yourContactInfo = {
   email: "imanistewart@gmail.com",
   phone: "+1 (301) 741-8581",
   location: "Providence, RI",
+  linkedin: "https://www.linkedin.com/in/imani-z-stewart",
 };
 
 function App() {
