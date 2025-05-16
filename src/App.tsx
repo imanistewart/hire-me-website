@@ -23,27 +23,29 @@ export interface Skill {
 }
 
 const yourSkills: Skill[] = [
-  // Technical skills
-  { name: "Data Analysis", level: 95, category: "technical" },
-  { name: "Mixed-Method Data Collection", level: 95, category: "technical" },
-  { name: "User-Centered Research", level: 95, category: "technical" },
-  { name: "Healthcare Compliance Frameworks", level: 80, category: "technical" },
-  { name: "Financial Modeling", level: 80, category: "technical" },
-  { name: "HTML/CSS/JS", level: 80, category: "technical" },
-  // Soft skills
-  { name: "Verbal & Written Communication", level: 100, category: "soft" },
-  { name: "Adaptability & Iterative Mindset", level: 100, category: "soft" },
-  { name: "Critical Thinking & Problem-Solving", level: 100, category: "soft" },
-  { name: "Presentation", level: 95, category: "soft" }, 
-  { name: "Cross-Functional Collaboration", level: 95, category: "soft" }, 
-  { name: "Training & Mentorship", level: 95, category: "soft" }, 
-  // Tools
-  { name: "Adobe Photoshop", level: 100, category: "tools" }, 
-  { name: "Google Workspace", level: 95, category: "tools" }, 
-  { name: "Microsoft Office Suite", level: 95, category: "tools" }, 
-  { name: "Slack", level: 95, category: "tools" }, 
-  { name: "Python", level: 80, category: "tools" },
-  { name: "Git/GitHub", level: 80, category: "tools" },
+   // Technical Skills
+  { name: 'Data Analysis', level: 80, category: 'technical' },
+  { name: 'Mixed-Method Data Collection', level: 80, category: 'technical' },
+  { name: 'User-Centered Research', level: 80, category: 'technical' },
+  { name: 'Healthcare Compliance Frameworks', level: 70, category: 'technical' },
+  { name: 'Financial Modeling', level: 70, category: 'technical' },
+  { name: 'HTML/CSS/JS', level: 70, category: 'technical' },
+
+  // Soft Skills
+  { name: 'Verbal & Written Communication', level: 90, category: 'soft' },
+  { name: 'Adaptability & Iterative Mindset', level: 90, category: 'soft' },
+  { name: 'Critical Thinking & Problem-Solving', level: 90, category: 'soft' },
+  { name: 'Presentation', level: 80, category: 'soft' },
+  { name: 'Cross-Functional Collaboration', level: 80, category: 'soft' },
+  { name: 'Training & Mentorship', level: 80, category: 'soft' },
+
+  // Tools & Technologies
+  { name: 'Adobe Photoshop', level: 90, category: 'tools' },
+  { name: 'Google Workspace', level: 80, category: 'tools' },
+  { name: 'Microsoft Office Suite', level: 80, category: 'tools' },
+  { name: 'Slack', level: 80, category: 'tools' },
+  { name: 'Python', level: 80, category: 'tools' },
+  { name: 'Git/GitHub', level: 70, category: 'tools' },
 ];
 
 const yourProjects = [
