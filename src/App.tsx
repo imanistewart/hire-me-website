@@ -163,15 +163,15 @@ const yourAwards = [
     institution: "Brown University",
     awards: [
       {
-        period: "2023-2024",
-        title: "Stone Inequality Initiative Fellow",
-        description: "One of six selected fellows for this prestigious program, awarded $5,000 to investigate the negative impacts of concentrated wealth in the United States. Fellows participate in monthly discussions, work with faculty advisors, and present research findings at a capstone event."
-      },
-      {
-        period: "Fall 2024",
+        period: "December 2024",
         title: "Brown Midyear Completion Orator",
         description: "Selected to represent the Class of 2024.5 with a speech focusing on fostering community through personal experiences.",
         link: "https://www.brown.edu/news/2024-12-04/midyear-completion"
+      },
+      {
+        period: "2023-2024",
+        title: "Stone Inequality Initiative Fellow",
+        description: "One of six selected fellows for this prestigious program, awarded $5,000 to investigate the negative impacts of concentrated wealth in the United States. Fellows participate in monthly discussions, work with faculty advisors, and present research findings at a capstone event."
       },
       {
         period: "Spring 2023",
