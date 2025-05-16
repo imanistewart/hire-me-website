@@ -4,7 +4,7 @@ import AboutSection from './components/AboutSection';
 import SkillsSection from './components/SkillsSection';
 import ProjectsSection from './components/ProjectsSection';
 import ExperienceSection from './components/ExperienceSection';
-import AwardsSection from './components/AwardsSection';
+import AwardsSection from './components/AwardsSection.tsx';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 
