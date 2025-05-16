@@ -4,6 +4,7 @@ import AboutSection from './components/AboutSection';
 import SkillsSection from './components/SkillsSection';
 import ProjectsSection from './components/ProjectsSection';
 import ExperienceSection from './components/ExperienceSection';
+import AwardsSection from './components/AwardsSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 
@@ -70,6 +71,17 @@ const yourExperience = [
       "Led the development of student programming and misconduct resolution.",
       "Designed scholarship pipelines, reducing tuition by 40% for underrepresented universities.",
       "Enhanced institutional conduct policies for student accessibility and procedural transparency.",
+    ],
+  },
+  {
+    title: "theKEEPER UTRA Summer Researcher",
+    company: "Brown University, Providence, RI",
+    period: "Jun. 2023 - Aug. 2023",
+    description: "Research fellowship awarded through Brown's Undergraduate Teaching and Research Awards (UTRA) to support development of a digital archive documenting global contributions of women and girls in Hip Hop culture.",
+    achievements: [
+      "Led data processing efforts using advanced Excel techniques to code, batch-upload, and QA over 190 calendar entries of artist birthdays and historical rap milestones for the archive's backend system.",
+      "Conducted archival sourcing and metadata annotation for over 130 images, ensuring long-term asset retrievability and contextual accuracy.",
+      "Facilitated data validation processes by developing input/output automation protocols, significantly reducing manual entry errors.",
     ],
   },
   {
@@ -143,6 +155,42 @@ const yourEducation = [
   },
 ];
 
+const yourAwards = [
+  {
+    institution: "Brown University",
+    awards: [
+      {
+        period: "Fall 2024",
+        title: "Brown Midyear Completion Orator",
+        description: "Selected to represent the Class of 2024.5 with a speech focusing on fostering community through personal experiences.",
+        link: "https://www.brown.edu/news/2024-12-04/midyear-completion"
+      },
+      {
+        period: "Spring 2023",
+        title: "Benjamin A. Gilman International Scholarship",
+        description: "Awarded this prestigious U.S. Cultural Exchange Program scholarship, administered by the U.S. Department of State.",
+        link: "https://www.avenuenews.com/news/local/two-ccbc-students-awarded-benjamin-a-gilman-international-scholarships-for-study-abroad/article_7709bf13-c01f-5b77-b068-93ea48dcc48a.html"
+      },
+      {
+        period: "Spring 2022",
+        title: "Art Exhibition Selections",
+        description: "Artwork displayed at Brown's 42nd Annual Juried Student Exhibition and The U-FLi Center Art Gallery, supporting undocumented, first-generation college, and low-income students."
+      },
+      {
+        period: "Fall 2021",
+        title: "Faith in the Vaccine Ambassador",
+        description: "Selected for this Interfaith Youth Core initiative, working to strengthen vaccination efforts and combat vaccine hesitancy in Rhode Island communities.",
+        achievements: [
+          "Conducted public surveys on Covid-19 vaccine perspectives",
+          "Developed age-appropriate curriculum for middle school students",
+          "Participated in community canvassing campaigns",
+          "Assisted local organizations with vaccination clinics"
+        ]
+      }
+    ]
+  }
+];
+
 const yourContactInfo = {
   email: "imanistewart@gmail.com",
   phone: "+1 (301) 741-8581",
@@ -158,6 +206,7 @@ function App() {
       <SkillsSection skills={yourSkills} />
       <ProjectsSection projects={yourProjects} />
       <ExperienceSection workExperience={yourExperience} education={yourEducation} />
+      <AwardsSection awards={yourAwards} />
       <ContactSection contactInfo={yourContactInfo} />
       <Footer name={yourName} />
     </div>
