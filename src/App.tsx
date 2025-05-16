@@ -160,6 +160,11 @@ const yourAwards = [
     institution: "Brown University",
     awards: [
       {
+        period: "2023-2024",
+        title: "Stone Inequality Initiative Fellow",
+        description: "One of six selected fellows for this prestigious program, awarded $5,000 to investigate the negative impacts of concentrated wealth in the United States. Fellows participate in monthly discussions, work with faculty advisors, and present research findings at a capstone event."
+      },
+      {
         period: "Fall 2024",
         title: "Brown Midyear Completion Orator",
         description: "Selected to represent the Class of 2024.5 with a speech focusing on fostering community through personal experiences.",
@@ -168,13 +173,13 @@ const yourAwards = [
       {
         period: "Spring 2023",
         title: "Benjamin A. Gilman International Scholarship",
-        description: "Awarded this prestigious U.S. Cultural Exchange Program scholarship, administered by the U.S. Department of State.",
-        link: "https://www.avenuenews.com/news/local/two-ccbc-students-awarded-benjamin-a-gilman-international-scholarships-for-study-abroad/article_7709bf13-c01f-5b77-b068-93ea48dcc48a.html"
+        description: "Awarded this prestigious U.S. Cultural Exchange Program scholarship, administered by the U.S. Department of State."
       },
       {
         period: "Spring 2022",
         title: "Art Exhibition Selections",
-        description: "Artwork displayed at Brown's 42nd Annual Juried Student Exhibition and The U-FLi Center Art Gallery, supporting undocumented, first-generation college, and low-income students."
+        description: "Artwork displayed at Brown's 42nd Annual Juried Student Exhibition and The U-FLi Center Art Gallery, supporting undocumented, first-generation college, and low-income students.",
+        link: "https://imanistewart.portfoliobox.net/"
       },
       {
         period: "Fall 2021",
