@@ -13,9 +13,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({ bio }) => {
           <div className="w-24 h-1 bg-indigo-600 mx-auto mb-10 rounded-full"></div>
           
           <div className="prose prose-lg mx-auto">
-            <p className="text-gray-700 leading-relaxed">
-              {bio}
-            </p>
+            <p className="text-gray-700 leading-relaxed" dangerouslySetInnerHTML={{ __html: bio }}></p>
           </div>
         </div>
       </div>
