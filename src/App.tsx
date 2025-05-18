@@ -4,7 +4,8 @@ import AboutSection from './components/AboutSection';
 import SkillsSection from './components/SkillsSection';
 import ProjectsSection from './components/ProjectsSection';
 import ExperienceSection from './components/ExperienceSection';
-import AwardsSection from './components/AwardsSection.tsx';
+import CertificationsSection from './components/CertificationsSection';
+import AwardsSection from './components/AwardsSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 
@@ -14,6 +15,15 @@ const yourTitle = "Research & Data Analyst";
 const yourPhotoUrl = "https://emerald-urban-meadowlark-587.mypinata.cloud/ipfs/bafkreihtlfgvbyaba6p2cssw7k6yldjmdb7sdojrdpuir2ru2rjhn2iopq";
 
 const yourBio = "I'm a multidisciplinary Research & Data Analyst with a passion for translating complex systems into actionable strategies. I specialize in regulatory insights and turning data into decision-ready insights across healthcare, venture capital, and higher education. I believe in clear communication, thoughtful program design, and building infrastructure that empowers both users and organizations. When I'm not improving the efficacy of workflows or supporting innovative and engaging student activities, you'll find me crocheting, doing home workouts, or hanging out with my cat, Mama.";
+
+const yourCertifications = [
+  {
+    title: "Certified Pharmacy Technician (CPhT)",
+    organization: "Pharmacy Technician Certification Board",
+    dateGranted: "October 09, 2015",
+    status: "Active"
+  }
+];
 
 export type SkillCategory = "technical" | "soft" | "tools";
 export interface Skill {
@@ -44,7 +54,7 @@ const yourSkills: Skill[] = [
   { name: 'Google Workspace', level: 80, category: 'tools' },
   { name: 'Microsoft Office Suite', level: 80, category: 'tools' },
   { name: 'Slack', level: 80, category: 'tools' },
-   { name: 'Notion', level: 80, category: 'tools' },
+  { name: 'Notion', level: 80, category: 'tools' },
   { name: 'Python', level: 70, category: 'tools' },
   { name: 'Git/GitHub', level: 70, category: 'tools' },
 ];
@@ -215,6 +225,7 @@ function App() {
       <SkillsSection skills={yourSkills} />
       <ProjectsSection projects={yourProjects} />
       <ExperienceSection workExperience={yourExperience} education={yourEducation} />
+      <CertificationsSection certifications={yourCertifications} />
       <AwardsSection awards={yourAwards} />
       <ContactSection contactInfo={yourContactInfo} />
       <Footer name={yourName} />
