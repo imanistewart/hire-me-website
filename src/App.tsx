@@ -185,7 +185,7 @@ const yourAwards = [
       },
       {
         period: "Spring 2023",
-        title: "Benjamin A. Gilman International Scholarship",
+        title: "Benjamin A. Gilman International Scholar",
         description: "Awarded this prestigious U.S. Cultural Exchange Program scholarship administered by the U.S. Department of State to study abroad in Greece. I was additionally awarded a spot on the Gilman-EU Brussels Study Tour of March 2023, where 20 Gilman students toured the European Union offices and met State Department officials in Belgium."
       },
       {
