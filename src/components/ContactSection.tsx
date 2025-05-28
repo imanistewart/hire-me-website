@@ -5,7 +5,7 @@ interface ContactInfo {
   email: string;
   phone: string;
   location: string;
-  linkedin?: string; // Optional LinkedIn profile URL
+  linkedin?: string;
 }
 
 interface ContactSectionProps {
@@ -45,12 +45,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({ contactInfo }) => {
                 </a>
               </p>
             </div>
-            
-            <div className="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition-shadow duration-300">
-              <MapPin className="w-10 h-10 mx-auto text-indigo-600 mb-4" />
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Location</h3>
-              <p className="text-gray-600">{contactInfo.location}</p>
-            </div>
+
             {contactInfo.linkedin && (
               <div className="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition-shadow duration-300">
                 <Linkedin className="w-10 h-10 mx-auto text-indigo-600 mb-4" />
@@ -66,6 +61,12 @@ const ContactSection: React.FC<ContactSectionProps> = ({ contactInfo }) => {
                 </p>
               </div>
             )}
+            
+            <div className="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition-shadow duration-300">
+              <MapPin className="w-10 h-10 mx-auto text-indigo-600 mb-4" />
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Location</h3>
+              <p className="text-gray-600">{contactInfo.location}</p>
+            </div>
           </div>
         </div>
       </div>

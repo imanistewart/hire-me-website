@@ -40,10 +40,10 @@ const HeroSection: React.FC<HeroSectionProps> = ({ name, title, photoUrl }) => {
                 <ArrowRight className="ml-2 w-4 h-4" />
               </a>
               <a 
-                href="#about" 
+                href="#experience" 
                 className="inline-flex items-center justify-center px-6 py-3 border border-white text-base font-medium rounded-md text-white hover:bg-white/10 transition-colors duration-300"
               >
-                Learn More
+                Resume
               </a>
             </div>
           </div>

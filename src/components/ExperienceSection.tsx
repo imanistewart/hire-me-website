@@ -44,8 +44,44 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = ({ workExperience, e
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* Work Experience */}
-          <div>
+          {/* Education - Now first */}
+          <div className="lg:order-1 order-1">
+            <h3 className="text-2xl font-bold text-gray-900 mb-8 flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 mr-2 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+              </svg>
+              Education
+            </h3>
+            
+            <div className="space-y-12">
+              {education.map((edu, index) => (
+                <div 
+                  key={index} 
+                  className="relative pl-8 border-l-2 border-indigo-200 pb-8 group"
+                >
+                  <div className="absolute -left-[9px] top-0 w-4 h-4 bg-indigo-600 rounded-full border-4 border-white shadow-sm"></div>
+                  
+                  <h4 className="text-xl font-semibold text-gray-900 group-hover:text-indigo-600 transition-colors duration-300">
+                    {edu.degree}
+                  </h4>
+                  <div className="flex items-center mt-1 mb-3">
+                    <span className="text-indigo-600 font-medium">{edu.institution}</span>
+                    <span className="mx-2 text-gray-400">•</span>
+                    <span className="text-gray-500 flex items-center">
+                      <Calendar className="w-4 h-4 mr-1" />
+                      {edu.period}
+                    </span>
+                  </div>
+                  <p className="text-gray-600">{edu.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+          
+          {/* Work Experience - Now second */}
+          <div className="lg:order-2 order-2">
             <h3 className="text-2xl font-bold text-gray-900 mb-8 flex items-center">
               <Briefcase className="w-6 h-6 mr-2 text-indigo-600" />
               Work Experience
@@ -77,42 +113,6 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = ({ workExperience, e
                       <li key={i}>{achievement}</li>
                     ))}
                   </ul>
-                </div>
-              ))}
-            </div>
-          </div>
-          
-          {/* Education */}
-          <div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-8 flex items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 mr-2 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path d="M12 14l9-5-9-5-9 5 9 5z" />
-                <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
-              </svg>
-              Education
-            </h3>
-            
-            <div className="space-y-12">
-              {education.map((edu, index) => (
-                <div 
-                  key={index} 
-                  className="relative pl-8 border-l-2 border-indigo-200 pb-8 group"
-                >
-                  <div className="absolute -left-[9px] top-0 w-4 h-4 bg-indigo-600 rounded-full border-4 border-white shadow-sm"></div>
-                  
-                  <h4 className="text-xl font-semibold text-gray-900 group-hover:text-indigo-600 transition-colors duration-300">
-                    {edu.degree}
-                  </h4>
-                  <div className="flex items-center mt-1 mb-3">
-                    <span className="text-indigo-600 font-medium">{edu.institution}</span>
-                    <span className="mx-2 text-gray-400">•</span>
-                    <span className="text-gray-500 flex items-center">
-                      <Calendar className="w-4 h-4 mr-1" />
-                      {edu.period}
-                    </span>
-                  </div>
-                  <p className="text-gray-600">{edu.description}</p>
                 </div>
               ))}
             </div>

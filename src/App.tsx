@@ -212,8 +212,8 @@ const yourAwards = [
 const yourContactInfo = {
   email: "imanistewart@gmail.com",
   phone: "+1 (301) 741-8581",
-  location: "Providence, RI",
   linkedin: "https://www.linkedin.com/in/imani-z-stewart",
+  location: "Providence, RI",
 };
 
 function App() {
@@ -223,8 +223,8 @@ function App() {
       <HeroSection name={yourName} title={yourTitle} photoUrl={yourPhotoUrl} />
       <AboutSection bio={yourBio} />
       <SkillsSection skills={yourSkills} />
-      <ProjectsSection projects={yourProjects} />
       <ExperienceSection workExperience={yourExperience} education={yourEducation} />
+      <ProjectsSection projects={yourProjects} />
       <CertificationsSection certifications={yourCertifications} />
       <AwardsSection awards={yourAwards} />
       <ContactSection contactInfo={yourContactInfo} />
