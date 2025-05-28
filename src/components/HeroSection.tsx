@@ -36,7 +36,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ name, title, photoUrl }) => {
                 href="#contact" 
                 className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-indigo-800 bg-white hover:bg-gray-100 transition-colors duration-300"
               >
-                Hire Me
+                Contact Me
                 <ArrowRight className="ml-2 w-4 h-4" />
               </a>
               <a 
