@@ -1,20 +1,26 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, ArrowUp } from 'lucide-react';
 
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [showBackToTopButton, setShowBackToTopButton] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
+      const currentScrollY = window.scrollY;
+      setIsScrolled(currentScrollY > 10);
+      setShowBackToTopButton(currentScrollY > 400); // Show button after scrolling 400px
     };
 
     window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Call on mount to set initial state if page is already scrolled
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const navLinks = [
+    // Optional: If you want the "Home" or Logo link to also scroll to hero
+    { name: 'Home', href: '#hero' }, // This could replace the static name link
     { name: 'About', href: '#about' },
     { name: 'Skills', href: '#skills' },
     { name: 'Projects', href: '#projects' },
@@ -23,6 +29,13 @@ const Header: React.FC = () => {
     { name: 'Awards', href: '#awards' },
     { name: 'Contact', href: '#contact' },
   ];
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
 
   return (
     <header
@@ -36,7 +49,7 @@ const Header: React.FC = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <a 
-              href="#" 
+              href="#hero" // Changed to scroll to hero section
               className={`text-xl font-bold transition-colors duration-300 ${
                 isScrolled ? 'text-gray-900' : 'text-white'
               }`}
@@ -109,6 +122,19 @@ const Header: React.FC = () => {
           ))}
         </div>
       </div>
+
+      {/* Back to Top Button */}
+      <button
+        onClick={scrollToTop}
+        aria-label="Back to top"
+        className={`fixed bottom-6 right-6 bg-indigo-600 text-white p-3 rounded-full shadow-lg
+                    transition-all duration-300 ease-in-out
+                    hover:bg-indigo-700 hover:bg-opacity-100 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50
+                    ${showBackToTopButton ? 'opacity-75 hover:opacity-100 visible scale-100' : 'opacity-0 invisible scale-90 pointer-events-none'}`}
+      >
+        <ArrowUp className="w-6 h-6" />
+      </button>
+
     </header>
   );
 };
