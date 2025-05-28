@@ -9,7 +9,7 @@ interface HeroSectionProps {
 
 const HeroSection: React.FC<HeroSectionProps> = ({ name, title, photoUrl }) => {
   return (
-    <section id="hero\" className="relative min-h-screen flex items-center bg-gradient-to-br from-indigo-900 via-purple-800 to-indigo-700">
+    <section id="hero" className="relative min-h-screen flex items-center bg-gradient-to-br from-indigo-900 via-purple-800 to-indigo-700 pt-20">
       <div className="absolute inset-0 bg-black opacity-50"></div>
       
       {/* Animated shapes */}
@@ -36,14 +36,14 @@ const HeroSection: React.FC<HeroSectionProps> = ({ name, title, photoUrl }) => {
                 href="#contact" 
                 className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-indigo-800 bg-white hover:bg-gray-100 transition-colors duration-300"
               >
-                Contact Me
+                Hire Me
                 <ArrowRight className="ml-2 w-4 h-4" />
               </a>
               <a 
-                href="#experience" 
+                href="#about" 
                 className="inline-flex items-center justify-center px-6 py-3 border border-white text-base font-medium rounded-md text-white hover:bg-white/10 transition-colors duration-300"
               >
-                Resume
+                Learn More
               </a>
             </div>
           </div>
