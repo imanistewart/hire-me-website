@@ -19,8 +19,6 @@ const Header: React.FC = () => {
   }, []);
 
   const navLinks = [
-    // Optional: If you want the "Home" or Logo link to also scroll to hero
-    { name: 'Home', href: '#hero' }, // This could replace the static name link
     { name: 'About', href: '#about' },
     { name: 'Skills', href: '#skills' },
     { name: 'Projects', href: '#projects' },
