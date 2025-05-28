@@ -9,7 +9,7 @@ interface HeroSectionProps {
 
 const HeroSection: React.FC<HeroSectionProps> = ({ name, title, photoUrl }) => {
   return (
-    <section id="hero" className="relative min-h-screen flex items-center bg-gradient-to-br from-indigo-900 via-purple-800 to-indigo-700">
+    <section id="hero\" className="relative min-h-screen flex items-center bg-gradient-to-br from-indigo-900 via-purple-800 to-indigo-700">
       <div className="absolute inset-0 bg-black opacity-50"></div>
       
       {/* Animated shapes */}
